@@ -1,0 +1,555 @@
+/* Start Variables */
+:root {
+  --primary: #000;
+  --secondary: #f8f9fa;
+  --accent: #007bff;
+  --sale: #ff3333;
+  --text: #333;
+  --light-text: #6c757d;
+}
+/* End Variables */
+
+/* Start Component */
+.navbar {
+  padding: 24px 0; 
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 32px; 
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--light-text);
+}
+
+.search-input {
+  width: 100%;
+  padding-left: 40px;
+  border-radius: 50px;
+}
+/* End Component */
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+
+/* ***************************************************************** Start Hero ************************************************************* */
+.hero-section {
+  background: url('image/hero/herotrendy-fashionable-couple-posing.png') no-repeat center center;
+  background-size: cover;
+  color: var(--text);
+}
+
+.hero-title {
+  font-size: 64px; 
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 32px; 
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-stats {
+  margin-top: 48px; 
+  padding-top: 32px; 
+  border-top: 1px solid #eee;
+}
+
+.stat-number {
+  font-size: 40px; 
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px; 
+}
+/* ***************************************************************** End Hero ************************************************************* */
+
+/* ***************************************************************** Start Brands ************************************************************* */
+.brands-section {
+  padding: 16px 0; 
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.brand-logo {
+  font-weight: 600;
+  font-size: 24px; 
+}
+/* ***************************************************************** End Brands ************************************************************* */
+
+/* ***************************************************************** Start Products ************************************************************* */
+.section-title {
+  font-size: 32px; 
+  font-weight: 700;
+  margin-bottom: 32px; 
+}
+
+.product-rating {
+  color: #ffcc00;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.product-rating .fas {
+  margin-right: 2px;
+}
+
+.product-rating .rating-score {
+  margin-left: 5px;
+  color: #333;
+}
+
+.product-card {
+  border: none;
+  transition: transform 0.3s;
+  margin-bottom: 32px; 
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-title {
+  font-weight: 600;
+  margin-top: 16px; 
+}
+
+.product-price {
+  font-weight: 600;
+}
+
+.sale-price {
+  color: var(--sale);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--light-text);
+  margin-left: 8px; 
+}
+
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--sale);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+/* ***************************************************************** End Products ************************************************************* */
+
+/* ***************************************************************** Start Dress Styles ************************************************************* */
+.browse-dress {
+  background-color: var(--secondary);
+}
+
+.dress-style-card {
+  height: 180px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 24px; 
+  margin-bottom: 24px; 
+  transition: transform 0.3s;
+}
+
+.dress-style-card:hover {
+  transform: scale(1.05);
+}
+
+.casual {
+  background: url('image/dress-styles/dress-1.png') no-repeat center center;
+  background-size: cover;
+}
+
+.formal {
+  background: url('image/dress-styles/dress-2.png') no-repeat center center;
+  background-size: cover;
+}
+
+.party {
+  background: url('image/dress-styles/dress-3.png') no-repeat center center;
+  background-size: cover;
+}
+
+.gym {
+  background: url('image/dress-styles/dress-4.png') no-repeat center center;
+  background-size: cover;
+}
+/* ***************************************************************** End Dress ************************************************************* */
+
+/* ***************************************************************** Start carousel Slide ************************************************************* */
+.testimonials-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  position: relative;
+}
+
+.section-title {
+  font-size: 32px; /* Overwritten, remains 32px */
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #000;
+  text-align: center;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  height: 100%;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin: 15px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px; 
+  font-size: 17.6px; 
+  line-height: 1.6;
+  color: #555;
+  position: relative;
+  padding-left: 20px;
+}
+
+.testimonial-text:before {
+  content: " ";
+  font-family: Georgia, serif;
+  font-size: 50px;
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  color: #f0f0f0;
+  z-index: 0;
+}
+
+.rating {
+  color: #FFD700;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.rating i {
+  margin-right: 2px;
+}
+
+.customer-name {
+  font-weight: 600;
+  font-size: 17.6px; 
+  color: #000;
+  margin-bottom: 3.2px; 
+}
+
+.customer-title {
+  color: #6c757d;
+  font-size: 14.4px; 
+}
+
+.verified-check {
+  color: #28a745;
+  font-size: 20px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(40, 167, 69, 0.1);
+  border-radius: 50%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  opacity: 1;
+  transition: all 0.3s ease;
+  position: static;
+  margin: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: #333;
+  transform: scale(1.05);
+}
+
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin: 0 5px;
+  border: none;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+  transform: scale(1.2);
+}
+/* ***************************************************************** End Carousel Slide ************************************************************* */
+
+/* ***************************************************************** Start Subscribe ************************************************************* */
+.subscribe-section {
+  background-color: var(--secondary);
+}
+
+.subscribe-section .content {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.subscribe-title {
+  color: var(--secondary);
+  font-size: 28.8px; 
+  font-weight: 700;
+  margin-bottom: 24px; 
+}
+
+.subscribe-input {
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  margin-right: 8px; 
+  width: 100%;
+  max-width: 350px;
+}
+
+.subscribe-section button {
+  background-color: var(--secondary);
+  color: var(--primary);
+  width: 353px;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* ***************************************************************** End Subscribe ************************************************************* */
+
+/* ***************************************************************** Start Footer ************************************************************* */
+footer {
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 64px 0 32px; 
+}
+
+footer h5 {
+  font-weight: 800;
+  margin-bottom: 24px; 
+}
+
+footer a {
+  color: var(--text);
+  text-decoration: none;
+  margin-bottom: 12.8px; 
+  display: block;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 16px; 
+  font-size: 19.2px; 
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: white;
+}
+/* ***************************************************************** End Footer ************************************************************* */
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 16px; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-nav {
+    margin-bottom: 16px; 
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 11.2px 0; 
+    font-size: 17.6px; 
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .search-container {
+    display: none;
+  }
+
+  .mobile-icons {
+    display: flex !important;
+    gap: 8px; 
+    margin-left: 0;
+    order: 2;
+  }
+
+  .mobile-icons .btn {
+    padding: 6.4px; 
+    font-size: 19.2px; 
+  }
+
+  .navbar-toggler {
+    order: 1;
+    margin-right: 16px; 
+  }
+
+  .navbar-brand {
+    order: 2;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    background: #f3f3f3;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .hero-stats .stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .show-btn {
+    width: 95%;
+  }
+
+  .hero-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .brands-section-item {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 40px; 
+  }
+
+  .stat-number {
+    font-size: 32px; 
+  }
+
+  .product-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 32px; 
+  }
+
+  .section-title {
+    font-size: 27.2px; 
+  }
+
+  .brand-logo {
+    font-size: 19.2px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-container {
+    padding: 20px;
+  }
+
+  .carousel-controls {
+    position: static;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .subscribe-section .content {
+    flex-wrap: wrap;
+  }
+}
